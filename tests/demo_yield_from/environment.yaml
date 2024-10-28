@@ -1,0 +1,16 @@
+app:
+  type: json
+  default: {
+    "models": [
+      {
+        "name": "QWER",
+        "fields": [
+        ]
+      },
+      {
+        "name": "PINK",
+        "fields": [
+        ]
+      }
+    ]
+  }
