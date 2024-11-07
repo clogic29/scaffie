@@ -15,7 +15,7 @@ from pydantic_core import to_jsonable_python
 
 from scaffolder.extensions import YieldExtension
 
-DEFAULT_TEMPLATES_SUFFIX = ".jinja"
+DEFAULT_TEMPLATES_SUFFIX = ".j2"
 DEFAULT_EXCLUDE: List[str] = [
     "~*",
     "*.py[co]",
@@ -37,7 +37,7 @@ class Config:
         self.ex_patterns.append(pattern)
 
     @cached_property
-    def templates_suffix(self) -> str:
+    def template_filename_suffix(self) -> str:
         return DEFAULT_TEMPLATES_SUFFIX
 
     @cached_property
