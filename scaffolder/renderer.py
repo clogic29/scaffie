@@ -74,7 +74,7 @@ class Renderer:
                 path = self.config.dst_abspath / str(dst_relpath)
                 path.mkdir()
 
-            if src.is_file():
+            if src.is_file() and not src.path.endswith("context.json"):
                 path = self.config.dst_abspath / str(dst_relpath)
                 with open(src, 'r') as f:
                     content = f.read()
