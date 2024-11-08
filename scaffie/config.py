@@ -13,7 +13,7 @@ from jinja2 import FileSystemLoader
 from jinja2.sandbox import SandboxedEnvironment
 from pydantic_core import to_jsonable_python
 
-from scaffolder.extensions import YieldExtension
+from scaffie.extensions import YieldExtension
 
 DEFAULT_TEMPLATES_SUFFIX = ".j2"
 DEFAULT_EXCLUDE: List[str] = [

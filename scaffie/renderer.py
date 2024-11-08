@@ -3,9 +3,9 @@ import shutil
 from functools import cached_property
 from pathlib import Path
 
-from scaffolder.config import Config
-from scaffolder.input import Input
-from scaffolder.utils import scantree, match, is_yield, get_yield_key, get_file_paths_upwards
+from scaffie.config import Config
+from scaffie.input import Input
+from scaffie.utils import scantree, match, is_yield, get_yield_key, get_file_paths_upwards
 
 
 class Renderer:
