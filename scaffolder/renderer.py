@@ -43,7 +43,7 @@ class Renderer:
 
                 yield_key = get_yield_key(self.jinja_env, src.name)
                 for key, value in result[yield_key].items():
-                    yield_path = target_path.parent / key
+                    yield_path = target_path.parent / key.lower()
                     shutil.copytree(src_abspath, yield_path)
                     local_context = yield_path / 'context.json'
                     local_context.touch()
